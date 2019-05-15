@@ -4,6 +4,7 @@ This projects aims to demonstrate some capabilities of Spring Data and Spring Da
 We'll create a simple object and an interface, adding only custom methods to the interface. <br />
 Everything else we'll get from the framework.
 
+In addition to complex queries, this project also demonstrates how data could be altered using event handlers
 
 ## Creating DB
 ``` 

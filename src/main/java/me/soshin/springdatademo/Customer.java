@@ -12,4 +12,13 @@ public class Customer {
     public Long id;
     public String name;
     public String email;
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
