@@ -1,5 +1,10 @@
 # Spring Data demo
 
+This projects aims to demonstrate some capabilities of Spring Data and Spring Data REST that may be not documented well enough. <br />
+We'll create a simple object and an interface, adding only custom methods to the interface. <br />
+Everything else we'll get from the framework.
+
+
 ## Creating DB
 ``` 
 createdb springdata
