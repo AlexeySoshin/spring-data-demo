@@ -18,6 +18,8 @@ public interface CustomerRepo extends CrudRepository<Customer, Long> {
      *         customer0_.email like ? escape ?
      *     order by
      *         customer0_.id desc
+     * binding parameter [1] as [VARCHAR] - [%gmail.com]
+     * binding parameter [2] as [CHAR] - [\]
      */
     List<Customer> findAllByEmailEndsWithOrderByIdDesc(String email);
 
@@ -31,6 +33,8 @@ public interface CustomerRepo extends CrudRepository<Customer, Long> {
      *         customer customer0_
      *     where
      *         upper(customer0_.name) like upper(?) escape ? limit ?
+     * binding parameter [1] as [VARCHAR] - [%alex%]
+     * binding parameter [2] as [CHAR] - [\]
      */
     List<Customer> findFirstByNameIgnoreCaseContaining(String name);
 }
