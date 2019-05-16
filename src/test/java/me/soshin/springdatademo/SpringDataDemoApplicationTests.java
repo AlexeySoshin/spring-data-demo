@@ -32,16 +32,16 @@ public class SpringDataDemoApplicationTests {
     }
 
     @Test
-    public void findAll() {
-        String expectedJson = getExpected("findAll-empty.json");
-        webClient.get().uri("/api/customers/").exchange().expectBody().json(expectedJson);
-    }
-
-    @Test
     public void create() {
         webClient.post().uri("/api/customers")
                 .header("Content-Type", "application/json")
                 .syncBody(getJSON("create.json")).exchange().expectStatus().isCreated();
+    }
+
+    @Test
+    public void findAll() {
+        String expectedJson = getExpected("findAll-single.json");
+        webClient.get().uri("/api/customers/").exchange().expectBody().json(expectedJson);
     }
 
     /**

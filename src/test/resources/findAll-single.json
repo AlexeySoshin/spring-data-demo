@@ -1,0 +1,27 @@
+{
+  "_embedded" : {
+    "customers" : [ {
+      "name" : "Alexey Soshin%",
+      "email" : "alexeysoshin@gmail.com",
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/customers/1"
+        },
+        "customer" : {
+          "href" : "http://localhost:8080/api/customers/1"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/api/customers/"
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/api/profile/customers"
+    },
+    "search" : {
+      "href" : "http://localhost:8080/api/customers/search"
+    }
+  }
+}
